@@ -1,5 +1,5 @@
 $(document).ready(function(){
-$.getJSON('https://api.maath.ga/get/data/286259539529957388/', function(data) {
-    $('#info').html('Uptime: '+data.uptime+ ' <br> Servidores: '+data.guilds)
+$.getJSON('http://s0uth.heliohost.org/data.json', function(data) {
+    $('#info').html('Uptime: '+data.uptime+ ' <br> Servidores: '+data.guilds + '<br> Usuários: '+ data.users + '<br> Vezes que me chamaram: '+data.calls)
 });
 });
